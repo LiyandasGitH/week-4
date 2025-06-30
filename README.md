@@ -9,4 +9,4 @@
 # Caution: when you notice that the style format does not make sense to other files, it wasn't meant for them
 # I had a lot of fun this lesson, playing around with the functions, removing what works and what didn't
 # I hope to return to this in the future and correct my styling issue
-# As of now, I submit this work, as a wokrinh progress.
+# As of now, I submit this work, as a wokring progress.
