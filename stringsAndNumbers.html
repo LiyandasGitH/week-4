@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Input for first number -->
+        <label for="number1">Enter first number:</label>
+        <input type="number" id="number1" step="any">
+        <br><br>
+        
+        <!-- added the labels to be able to see/select the numbers on the browser -->
+        
+        <!-- Input for second number --> 
+        <label for="number2">Enter second number:</label>
+        <input type="number" id="number2" step="any">
+        <br><br>
+
+        <!-- button for division -->
+        <button onclick="calculate()">Divide</button>
+        <!-- declare function caclculate() -->
+
+        <!-- button to clear inputs & results -->
+        <button onclick="clearFields()">Clear</button>
+        <!-- declare function clear() -->
+        <p id="outputText"></p>
+
+        <script>
+
+            function calculate() {
+                var text1 = document.getElementById("number1").value;
+                var text2 = document.getElementById("number2").value;
+
+                var num1 = stringToNumber(text1);
+                var num2 = stringToNumber(text2);
+            
+
+                if(isNaN(num1) || isNaN(num2)){
+                document.getElementById("outputText").innerHTML = "You have not entered a valid number. Please try again.";
+                }
+                else if (num2 == 0) {
+                document.getElementById("outputText").innerHTML = "Division by zero is not allowed.";
+                }
+                else{
+                document.getElementById("outputText").innerHTML = num1 / num2;
+                }
+            }
+//            function stringToNumber(text){
+//                return parseInt(text);
+//            }
+
+            function stringToNumber(text){
+                return parseFloat(text); // can be able to divide decimal numbers as well
+            }
+            
+            // clear all fields and result
+            function clearFields(){
+                document.getElementById("number1").value = " ";
+                document.getElementById("number2").value = " ";
+                document.getElementById("outputText").innerHTML = " ";
+            }
+
+        </script>
+    </body>
+</html>
