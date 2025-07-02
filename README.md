@@ -3,7 +3,7 @@
 # FNB IT Varisty work
 # Learning Javascript
 
-# At one point durng my revision, I thought it a wnderful idea to populate my css stylesheet
+# At one point durng my revision, I thought it a wonderful idea to populate my css stylesheet
 # While working on it, I had only the switch.html browser open
 # It is only afterwards that I realised that upon populating the stylesheet, it affected all other files in the code
 # Caution: when you notice that the style format does not make sense to other files, it wasn't meant for them
